@@ -1,0 +1,144 @@
+﻿<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Проекты | Роберт Панков</title>
+  <meta name="description" content="Проекты Роберта Панкова: исторический сайт Защитники Ханко, лендинг FITSPACE, калькулятор и добавление новых работ.">
+  <meta name="keywords" content="портфолио студента, Роберт Панков, веб-разработка, HTML, CSS, JavaScript, учебные проекты, адаптивная верстка, начинающий разработчик">
+  <meta name="author" content="Роберт Панков">
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+<div class="progress-bar" data-progress></div>
+<header class="site-header" data-header>
+  <a class="brand" href="portfolio.html" aria-label="На главную">
+    <span class="brand-mark">P</span>
+    <span class="brand-name">Portfolio</span>
+  </a>
+  <nav class="nav-links" aria-label="Основная навигация">
+    <a href="portfolio.html">Главная</a>
+    <a href="about.html">Обо мне</a>
+    <a href="projects.html">Проекты</a>
+    <a href="hobby.html">Хобби</a>
+    <a href="contacts.html">Контакты</a>
+  </nav>
+  <div class="header-actions">
+    <a class="button button-primary" href="contacts.html">Связаться</a>
+    <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" data-menu-toggle>☰</button>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <div class="section-heading reveal">
+      <div>
+        <p class="eyebrow">Реальные работы</p>
+        <h1>Проекты</h1>
+      </div>
+      <p class="lead">Здесь собраны мои готовые HTML-проекты: учебный исторический сайт, лендинг фитнес-центра и небольшое JavaScript-приложение.</p>
+      <div class="projects-page-actions">
+        <button class="button button-primary" type="button" data-open-project-form>Добавить проект</button>
+        <p>Новые проекты сохраняются в этом браузере и появляются рядом с основными карточками.</p>
+      </div>
+    </div>
+
+    <div class="projects-grid real-projects" data-projects-grid>
+      <article class="project-card reveal" data-project="study">
+        <a class="project-image" href="Защитники ханко.html" aria-label="Открыть проект Защитники Ханко">
+          <img src="project-hanko.png" alt="Превью исторического сайта о защитниках полуострова Ханко">
+        </a>
+        <div class="project-body">
+          <p class="project-meta">Учебный проект</p>
+          <h3>Защитники Ханко</h3>
+          <p>Многостраничный историко-информационный сайт о героях обороны полуострова Ханко. В проекте есть навигация по биографиям, карточки героев, историческая справка, timeline и кнопка возврата наверх.</p>
+          <div class="project-actions">
+            <a class="button button-primary" href="Защитники ханко.html">Открыть проект</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-project="business">
+        <a class="project-image" href="Фитнес-центр_FITSPACE.html" aria-label="Открыть проект FITSPACE">
+          <img src="project-fitspace.png" alt="Превью лендинга фитнес-центра FITSPACE">
+        </a>
+        <div class="project-body">
+          <p class="project-meta">Лендинг</p>
+          <h3>Фитнес-центр FITSPACE</h3>
+          <p>Полноценный лендинг фитнес-клуба с программами, расписанием, тарифами и контактной формой. Внутри реализованы фильтры направлений, тёмная тема, модальное бронирование, toast-уведомления и сохранение данных в localStorage.</p>
+          <div class="project-actions">
+            <a class="button button-primary" href="Фитнес-центр_FITSPACE.html">Открыть проект</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-project="tool">
+        <a class="project-image" href="Калькулятор.html" aria-label="Открыть проект Калькулятор">
+          <img src="project-calculator.svg" alt="Превью JavaScript-калькулятора">
+        </a>
+        <div class="project-body">
+          <p class="project-meta">Мини-приложение</p>
+          <h3>Калькулятор</h3>
+          <p>Небольшой интерактивный калькулятор на HTML, CSS и JavaScript. Реализованы цифровые кнопки, математические операции, вывод результата, очистка дисплея и обработка ошибки вычисления.</p>
+          <div class="project-actions">
+            <a class="button button-primary" href="Калькулятор.html">Открыть проект</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</main>
+
+<div class="project-modal" data-project-modal hidden>
+  <div class="project-modal-panel" role="dialog" aria-modal="true" aria-labelledby="add-project-title">
+    <button class="modal-x" type="button" aria-label="Закрыть форму" data-close-project-form>×</button>
+    <p class="eyebrow">Новый проект</p>
+    <h2 id="add-project-title">Добавить свой проект</h2>
+    <form class="add-project-form" data-add-project-form>
+      <label>
+        Название проекта
+        <input type="text" name="title" placeholder="Например: Интернет-магазин" required>
+      </label>
+      <label>
+        Тип проекта
+        <input type="text" name="type" placeholder="Учебный проект, лендинг, приложение" required>
+      </label>
+      <label class="full-field">
+        Описание
+        <textarea name="description" rows="4" placeholder="Коротко опиши, что делает проект и что в нём реализовано" required></textarea>
+      </label>
+      <label>
+        Ссылка или файл
+        <input type="text" name="link" placeholder="project.html или https://...">
+      </label>
+      <label class="full-field">
+        Превью проекта
+        <input type="file" name="image" accept="image/*">
+      </label>
+      <p class="form-message full-field" data-project-form-message></p>
+      <div class="form-actions full-field">
+        <button class="button button-primary" type="submit">Сохранить проект</button>
+        <button class="button button-secondary" type="button" data-close-project-form>Отмена</button>
+      </div>
+    </form>
+  </div>
+</div>
+<footer class="footer">
+  <span>© <span data-year></span> Роберт Панков. Портфолио студента.</span>
+  <a href="contacts.html">Готов к учебным и практическим проектам</a>
+</footer>
+<button class="back-to-top" type="button" aria-label="Наверх" data-back-to-top>↑</button>
+<script src="portfolio.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

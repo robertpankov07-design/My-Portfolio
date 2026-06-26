@@ -1,0 +1,122 @@
+﻿<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Роберт Панков | Портфолио</title>
+  <meta name="description" content="Портфолио студента Роберта Панкова: веб-разработка, учебные проекты, навыки, хобби и контакты.">
+  <meta name="keywords" content="портфолио студента, Роберт Панков, веб-разработка, HTML, CSS, JavaScript, учебные проекты, адаптивная верстка, начинающий разработчик">
+  <meta name="author" content="Роберт Панков">
+  <link rel="stylesheet" href="portfolio.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Роберт Панков",
+    "jobTitle": "Студент, начинающий веб-разработчик",
+    "knowsAbout": ["HTML", "CSS", "JavaScript", "Python", "адаптивная верстка"],
+    "url": "portfolio.html",
+    "sameAs": ["projects.html", "contacts.html"]
+  }
+  </script>
+</head>
+<body>
+<div class="progress-bar" data-progress></div>
+<header class="site-header" data-header>
+  <a class="brand" href="portfolio.html" aria-label="На главную">
+    <span class="brand-mark">P</span>
+    <span class="brand-name">Portfolio</span>
+  </a>
+  <nav class="nav-links" aria-label="Основная навигация">
+    <a href="portfolio.html">Главная</a>
+        <a href="about.html">Обо мне</a>
+<a href="projects.html">Проекты</a>
+    <a href="hobby.html">Хобби</a>
+    <a href="contacts.html">Контакты</a>
+  </nav>
+  <div class="header-actions">
+    <a class="button button-primary" href="contacts.html">Связаться</a>
+    <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" data-menu-toggle>☰</button>
+  </div>
+</header>
+<main>
+  <section class="section hero">
+    <div class="hero-copy reveal">
+      <p class="eyebrow">Студент КАИТ-20 • веб-разработка</p>
+      <h1>Делаю понятные сайты и учебные веб-проекты.</h1>
+      <p class="lead">Я Роберт Панков. Изучаю HTML, CSS, JavaScript и Python, развиваю навыки проектирования интерфейсов и хочу делать аккуратные цифровые продукты.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="projects.html">Смотреть проекты</a>
+        <a class="button button-secondary" href="contacts.html">Написать мне</a>
+      </div>
+      <div class="stats" aria-label="Краткие факты">
+        <div class="stat"><strong>2</strong><span>курс обучения</span></div>
+        <div class="stat"><strong>4+</strong><span>направления навыков</span></div>
+        <div class="stat"><strong>100%</strong><span>готовность учиться</span></div>
+      </div>
+    </div>
+    <div class="hero-media reveal">
+      <img src="portfolio-hero.png" alt="Рабочее пространство для дизайна и разработки">
+    </div>
+  </section>
+
+  <section class="section surface">
+    <div class="container home-overview">
+      <aside class="profile-card home-guide reveal">
+        <p class="eyebrow">Навигация</p>
+        <h2>Что есть на сайте</h2>
+        <p>Портфолио собрано так, чтобы быстро показать меня как начинающего разработчика: кто я, какие проекты сделал, чем интересуюсь и как со мной связаться.</p>
+        <div class="guide-links">
+          <a href="about.html"><strong>Обо мне</strong><span>биография, цели и направление развития</span></a>
+          <a href="projects.html"><strong>Проекты</strong><span>реальные HTML/CSS/JavaScript-работы</span></a>
+          <a href="hobby.html"><strong>Хобби</strong><span>спорт, фотография и саморазвитие</span></a>
+          <a href="contacts.html"><strong>Контакты</strong><span>форма, телефон и электронная почта</span></a>
+        </div>
+      </aside>
+
+      <div class="home-cards reveal">
+        <p class="eyebrow">Коротко</p>
+        <h2>Ответственный подход и желание развиваться в IT.</h2>
+        <p class="lead">Я быстро разбираюсь в новых инструментах, стараюсь писать понятный код и уделяю внимание структуре страницы. Мне интересны учебная практика, стажировки и проекты, где можно расти в веб-разработке.</p>
+        <div class="cards-grid compact-grid">
+          <article class="card">
+            <span class="card-accent">01</span>
+            <h3>Сейчас</h3>
+            <p>Улучшаю портфолио, добавляю реальные проекты и делаю страницы аккуратнее.</p>
+          </article>
+          <article class="card">
+            <span class="card-accent">02</span>
+            <h3>Фокус</h3>
+            <p>HTML, CSS, JavaScript, адаптивная верстка, формы и понятная навигация.</p>
+          </article>
+          <article class="card">
+            <span class="card-accent">03</span>
+            <h3>Проекты</h3>
+            <p>Исторический сайт, фитнес-лендинг и JavaScript-калькулятор уже добавлены в портфолио.</p>
+          </article>
+          <article class="card">
+            <span class="card-accent">04</span>
+            <h3>Цель</h3>
+            <p>Найти своё направление в IT и развиваться как квалифицированный специалист.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <span>© <span data-year></span> Роберт Панков. Портфолио студента.</span>
+  <a href="contacts.html">Готов к учебным и практическим проектам</a>
+</footer>
+<button class="back-to-top" type="button" aria-label="Наверх" data-back-to-top>↑</button>
+<script src="portfolio.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
